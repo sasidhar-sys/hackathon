@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PocketScan AI — Medical Intelligence</title>
+
+  <!-- Fonts: preconnect + preload for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- display=swap ensures page renders immediately while fonts load -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ░░░ SPLASH — ultra-fast, CSS-only, 800ms max ░░░ -->
+<div id="splash" class="splash">
+  <div class="sp-logo">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+      <path d="M20 3L3 12v16l17 9 17-9V12L20 3z" stroke="url(#spg)" stroke-width="1.8" fill="none"/>
+      <path d="M20 13v14M13 20h14" stroke="url(#spg)" stroke-width="3" stroke-linecap="round"/>
+      <defs><linearGradient id="spg" x1="3" y1="3" x2="37" y2="37"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+    </svg>
+  </div>
+  <div class="sp-name">PocketScan<em>AI</em></div>
+  <div class="sp-bar"><div class="sp-fill"></div></div>
+</div>
+
+<!-- ░░░ BACKGROUND ░░░ -->
+<div class="bg-world" aria-hidden="true">
+  <div class="bg-glow g1"></div>
+  <div class="bg-glow g2"></div>
+  <div class="bg-grid"></div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HEADER
+═══════════════════════════════════════ -->
+<header class="hdr">
+  <div class="hdr-inner">
+
+    <a class="hdr-logo" href="#">
+      <div class="logo-gem">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2L3 7v10l9 5 9-5V7L12 2z" stroke="url(#lgg)" stroke-width="1.8"/>
+          <path d="M12 8v8M8 12h8" stroke="url(#lgg)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs><linearGradient id="lgg" x1="3" y1="2" x2="21" y2="22"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+        </svg>
+      </div>
+      <div>
+        <div class="lt-main">PocketScan<em>AI</em></div>
+        <div class="lt-sub" data-i18n="tagline">Medical Intelligence Platform</div>
+      </div>
+    </a>
+
+    <nav class="hdr-nav">
+      <button class="hn-btn active" data-i18n="nav_scanner">Scanner</button>
+      <button class="hn-btn" data-i18n="nav_history">History</button>
+      <button class="hn-btn" data-i18n="nav_reports">Reports</button>
+    </nav>
+
+    <div class="hdr-end">
+      <!-- Language switcher -->
+      <div class="lang-switcher">
+        <button class="ls-btn active" data-lang-switch="en">EN</button>
+        <button class="ls-btn" data-lang-switch="hi">हि</button>
+        <button class="ls-btn" data-lang-switch="ta">த</button>
+      </div>
+      <div class="live-pill">
+        <span class="lp-dot"></span>
+        <span data-i18n="online">Neural Core Online</span>
+      </div>
+      <div class="hdr-avatar">DR</div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-bar"></span>
+        <span data-i18n="eyebrow">AI · DIAGNOSTICS · REAL-TIME</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-i18n="h1_line1">Scan.</span><br>
+        <span data-i18n="h1_line2">Detect.</span><br>
+        <span class="ht-accent" data-i18n="h1_line3">Understand.</span>
+      </h1>
+      <p class="hero-body" data-i18n="hero_desc">
+        Upload any medical image — X-ray, MRI, CT, dermoscopy — and receive instant AI-powered diagnosis with confidence scoring and voice output in your language.
+      </p>
+      <div class="hero-tags">
+        <span class="htag">X-Ray</span>
+        <span class="htag">MRI</span>
+        <span class="htag">CT Scan</span>
+        <span class="htag">Dermoscopy</span>
+        <span class="htag">Retinal</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-ring-wrap">
+        <div class="hr-ring outer"></div>
+        <div class="hr-ring mid"></div>
+        <div class="hr-ring inner"></div>
+        <div class="hr-core">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <path d="M26 4L4 17v18l22 13 22-13V17L26 4z" stroke="url(#rcg)" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <path d="M26 17v18M17 26h18" stroke="url(#rcg)" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="26" cy="26" r="6" fill="url(#rcg2)" opacity="0.8"/>
+            <defs>
+              <linearGradient id="rcg" x1="4" y1="4" x2="48" y2="48"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+              <radialGradient id="rcg2" cx="50%" cy="50%" r="50%"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="orbit-dot od1"></div>
+        <div class="orbit-dot od2"></div>
+        <div class="orbit-dot od3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-strip">
+    <div class="hs-item"><div class="hsi-val">97.3%</div><div class="hsi-label" data-i18n="stat_accuracy">Accuracy</div></div>
+    <div class="hs-sep"></div>
+    <div class="hs-item"><div class="hsi-val">240+</div><div class="hsi-label" data-i18n="stat_diseases">Diseases</div></div>
+    <div class="hs-sep"></div>
+    <div class="hs-item"><div class="hsi-val">1.2M+</div><div class="hsi-label" data-i18n="stat_scans">Scans Done</div></div>
+    <div class="hs-sep"></div>
+    <div class="hs-item"><div class="hsi-val">&lt;3s</div><div class="hsi-label" data-i18n="stat_speed">Avg Response</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAIN PANELS
+═══════════════════════════════════════ -->
+<main class="workspace">
+
+  <!-- ▌ SCANNER PANEL ▌ -->
+  <section class="panel panel-scan">
+    <div class="panel-topbar">
+      <div class="ptb-left">
+        <div class="ptb-badge cyan"><div class="ptb-led"></div><span data-i18n="badge_scanner">SCANNER</span></div>
+        <h2 class="ptb-title" data-i18n="scanner_title">Diagnostic Engine</h2>
+      </div>
+      <div class="ptb-index">01</div>
+    </div>
+
+    <!-- Upload -->
+    <div class="upload-area" id="uploadZone">
+      <input type="file" id="fileInput" accept="image/*" hidden/>
+      <div class="ua-empty" id="uploadInner">
+        <div class="ua-anim">
+          <div class="uaa-track t1"></div>
+          <div class="uaa-track t2"></div>
+          <div class="uaa-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path d="M18 26V12m0 0l-7 7m7-7l7 7" stroke="url(#upg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 32h20" stroke="url(#upg)" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+              <defs><linearGradient id="upg" x1="8" y1="8" x2="28" y2="32"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+            </svg>
+          </div>
+        </div>
+        <h3 class="ua-title" data-i18n="upload_title">Drop your medical scan here</h3>
+        <p class="ua-hint" data-i18n="upload_hint">Supports X-Ray · MRI · CT · Dermoscopy · PNG · JPG · DICOM</p>
+        <button class="btn-upload-trigger" onclick="document.getElementById('fileInput').click()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span data-i18n="btn_choose">Choose File</span>
+        </button>
+      </div>
+      <div class="ua-preview" id="uploadPreview" style="display:none">
+        <img id="previewImg" alt="scan"/>
+        <div class="uap-actions">
+          <span class="uap-ready">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="ready">Ready for analysis</span>
+          </span>
+          <button class="uap-del" id="removeImg"><span data-i18n="btn_remove">Remove</span> ✕</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analyze button -->
+    <button class="btn-analyze" id="analyzeBtn" disabled>
+      <div class="ba-bg"></div>
+      <div class="ba-shimmer"></div>
+      <div class="ba-body">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        <span data-i18n="btn_analyze">Run Neural Analysis</span>
+        <span class="ba-arr">→</span>
+      </div>
+    </button>
+
+    <!-- Processing -->
+    <div class="processing" id="scanLoading" style="display:none">
+      <div class="proc-vis">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <p class="proc-txt" data-i18n="processing">Processing neural pathways…</p>
+    </div>
+
+    <!-- Result card -->
+    <div class="result-block" id="resultCard" style="display:none">
+      <div class="rb-topline"></div>
+      <div class="rb-header">
+        <span class="rb-mono" data-i18n="diag_output">DIAGNOSIS OUTPUT</span>
+        <span class="rb-status" id="resultStatus">—</span>
+      </div>
+      <div class="rb-disease" id="resultDisease">—</div>
+      <div class="rb-conf-wrap">
+        <div class="rbcw-top">
+          <span class="rbcw-label" data-i18n="confidence">CONFIDENCE SCORE</span>
+          <span class="rbcw-val" id="confVal">—</span>
+        </div>
+        <div class="rbcw-track"><div class="rbcw-fill" id="confFill"></div></div>
+      </div>
+      <p class="rb-note" id="resultNote">—</p>
+
+      <!-- Translated result note (Hindi/Tamil) -->
+      <div class="rb-translated" id="translatedNote" style="display:none">
+        <div class="rbt-header">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h12M9 3v2m4 16-4-4 4-4M13 13l4 4-4 4"/></svg>
+          <span id="translatedLangLabel">Hindi Translation</span>
+        </div>
+        <p id="translatedText">—</p>
+      </div>
+
+      <div class="rb-voice">
+        <select class="rb-lang" id="langSelect">
+          <option value="en-US">🇺🇸 English</option>
+          <option value="hi-IN">🇮🇳 हिंदी (Hindi)</option>
+          <option value="ta-IN">🇮🇳 தமிழ் (Tamil)</option>
+        </select>
+        <button class="btn-speak" id="voiceBtn">
+          <div class="bs-pulse"></div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          <span id="speakLabel" data-i18n="btn_speak">Speak Result</span>
+        </button>
+      </div>
+      <div class="waveform" id="waveform" style="display:none">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ▌ CHAT PANEL ▌ -->
+  <section class="panel panel-chat">
+    <div class="panel-topbar">
+      <div class="ptb-left">
+        <div class="ptb-badge green"><div class="ptb-led green"></div><span data-i18n="badge_assistant">ASSISTANT</span></div>
+        <h2 class="ptb-title" data-i18n="assistant_title">AI Consultant</h2>
+      </div>
+      <div class="chat-topbar-right">
+        <div class="ai-model-badge">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M4.22 4.22l2.12 2.12m11.32 11.32 2.12 2.12M2 12h3m14 0h3M4.22 19.78l2.12-2.12m11.32-11.32 2.12-2.12"/></svg>
+          Claude Sonnet
+        </div>
+        <button class="chat-clear-btn" id="clearChatBtn" title="Clear chat">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg>
+        </button>
+        <div class="ptb-index">02</div>
+      </div>
+    </div>
+
+    <!-- Quick chips — change with language -->
+    <div class="quick-chips" id="quickChips">
+      <button class="qchip" data-key="chip_pneumonia">🫁 Pneumonia symptoms</button>
+      <button class="qchip" data-key="chip_retina">👁 Retinopathy stages</button>
+      <button class="qchip" data-key="chip_melanoma">🔬 Melanoma ABCDE</button>
+      <button class="qchip" data-key="chip_heart">❤️ Heart attack signs</button>
+      <button class="qchip" data-key="chip_mri">🧲 How MRI works</button>
+      <button class="qchip" data-key="chip_bp">💊 Hypertension drugs</button>
+    </div>
+
+    <div class="chat-msgs" id="chatWindow">
+      <div class="cmsg bot">
+        <div class="cmsg-ava bot">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M4.22 4.22l2.12 2.12m11.32 11.32 2.12 2.12M2 12h3m14 0h3M4.22 19.78l2.12-2.12m11.32-11.32 2.12-2.12"/></svg>
+        </div>
+        <div class="cmsg-bub bot" id="welcomeMsg">
+          <p>Hello! I'm your <strong>PocketScan AI</strong> medical consultant — powered by Claude. I can answer questions in <strong>English, Hindi, and Tamil</strong>.</p>
+          <p style="margin-top:8px">Ask me about symptoms, diagnoses, drugs, treatment plans, or scan results — in any language you prefer.</p>
+          <time>Just now</time>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-thinking" id="aiThinking" style="display:none">
+      <div class="ait-dots"><span></span><span></span><span></span></div>
+      <span class="ait-label" data-i18n="thinking">Claude is thinking…</span>
+    </div>
+
+    <div class="chat-input-bar">
+      <div class="cib-wrap">
+        <input class="cib-field" id="chatInput" type="text" data-i18n-placeholder="chat_placeholder" placeholder="Ask about symptoms, diagnoses, drugs, treatments…" autocomplete="off" maxlength="500"/>
+        <span class="cib-char" id="charCount">0/500</span>
+      </div>
+      <button class="cib-send" id="sendBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+    <p class="chat-disclaimer" data-i18n="disclaimer">⚠️ For informational purposes only. Always consult a licensed physician.</p>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════
+     METRICS
+═══════════════════════════════════════ -->
+<section class="metrics">
+  <div class="metrics-inner">
+    <div class="metrics-head">
+      <div class="mh-eyebrow"><span class="eyebrow-bar"></span><span data-i18n="metrics_eyebrow">PLATFORM INTELLIGENCE</span></div>
+      <h2 class="mh-title" data-i18n="metrics_title">Live Metrics</h2>
+    </div>
+    <div class="metrics-grid">
+      <div class="mcard" data-target="97.3" data-suffix="%">
+        <div class="mcard-accent cyan"></div>
+        <div class="mcard-icon cyan"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="mcard-big" id="acc">0%</div>
+        <div class="mcard-name" data-i18n="m_accuracy">Detection Accuracy</div>
+        <div class="mcard-bar-wrap"><div class="mcard-bar cyan" style="--p:97.3%"></div></div>
+        <div class="mcard-ghost">97</div>
+      </div>
+      <div class="mcard" data-target="240" data-suffix="+">
+        <div class="mcard-accent violet"></div>
+        <div class="mcard-icon violet"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12h6m-3-3v6m8 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
+        <div class="mcard-big" id="dis">0</div>
+        <div class="mcard-name" data-i18n="m_diseases">Diseases Covered</div>
+        <div class="mcard-bar-wrap"><div class="mcard-bar violet" style="--p:80%"></div></div>
+        <div class="mcard-ghost">240</div>
+      </div>
+      <div class="mcard" data-target="94.8" data-suffix="%">
+        <div class="mcard-accent green"></div>
+        <div class="mcard-icon green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <div class="mcard-big" id="confm">0%</div>
+        <div class="mcard-name" data-i18n="m_confidence">Avg AI Confidence</div>
+        <div class="mcard-bar-wrap"><div class="mcard-bar green" style="--p:94.8%"></div></div>
+        <div class="mcard-ghost">94</div>
+      </div>
+      <div class="mcard" data-target="1.2" data-suffix="M+">
+        <div class="mcard-accent rose"></div>
+        <div class="mcard-icon rose"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12l3 3 5-5"/></svg></div>
+        <div class="mcard-big" id="scans">0</div>
+        <div class="mcard-name" data-i18n="m_scans">Scans Processed</div>
+        <div class="mcard-bar-wrap"><div class="mcard-bar rose" style="--p:72%"></div></div>
+        <div class="mcard-ghost">1M</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">PocketScan<em>AI</em></div>
+    <p class="footer-note" data-i18n="footer_note">For research & informational use only · Not a substitute for clinical diagnosis</p>
+    <p class="footer-copy">© 2025 PocketScan AI Inc.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
